@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #ffd6e8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* hearts background */
+body::before {
+  content: "❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤";
+  position: absolute;
+  inset: 0;
+  font-size: 38px;
+  line-height: 90px;
+  text-align: center;
+  color: #8b0028;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.box {
+  background: #ffe6f0;
+  padding: 30px 35px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  width: 320px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: maroon;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+button {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background: maroon;
+  color: white;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: maroon;
+}
+
+.note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: maroon;
+}
